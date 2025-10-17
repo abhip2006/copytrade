@@ -29,10 +29,10 @@ export async function GET() {
     const supabase = createServiceRoleClient();
 
     // Get or create user in Supabase
-    let { data: user, error: userError } = await supabase
+    let { data: user, error: userError } = await (supabase
       .from('users')
       .select('*')
-      .eq('clerk_user_id' as any, clerkUserId)
+      .eq('clerk_user_id', clerkUserId) as any)
       .single();
 
     // If user doesn't exist yet, get Clerk user info and create
