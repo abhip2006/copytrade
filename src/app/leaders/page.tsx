@@ -13,7 +13,7 @@ import { LeaderCard } from "@/components/ui/leader-card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Badge } from "@/components/ui/badge";
 import { CopySettingsModal } from "@/components/copy/copy-settings-modal";
-import { HeroHeader } from "@/components/blocks/hero-section-1";
+// import { HeroHeader } from "@/components/blocks/hero-section-1";
 import {
   Command,
   CommandDialog,

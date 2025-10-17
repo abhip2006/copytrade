@@ -10,8 +10,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQSectionGradient } from "@/components/ui/faq-section";
 import { HelpCircle, MessageCircle } from "lucide-react";
-import { HeroHeader } from "@/components/blocks/hero-section-1";
-import { AnimatedBackground } from "@/components/ui/animated-background";
+// import { HeroHeader } from "@/components/blocks/hero-section-1";
+// import { AnimatedBackground } from "@/components/ui/animated-background";
 
 const generalFAQs = [
   {

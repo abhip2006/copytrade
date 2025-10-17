@@ -23,8 +23,8 @@ import {
 } from "lucide-react";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Button } from "@/components/ui/button";
-import { AnimatedBackground } from "@/components/ui/animated-background";
-import { HeroHeader } from "@/components/blocks/hero-section-1";
+// import { AnimatedBackground } from "@/components/ui/animated-background";
+// import { HeroHeader } from "@/components/blocks/hero-section-1";
 
 const features = [
   {

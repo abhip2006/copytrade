@@ -1,0 +1,110 @@
+{
+  "node": {
+    "7f863512b4634632643a9a8081403c55146685fece": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "detectKeylessEnvDriftAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "rsc"
+      },
+      "exportedName": "detectKeylessEnvDriftAction",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "7f0a4e51734e01c446fef815cdc2d1abc977ab2f26": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      },
+      "exportedName": "invalidateCacheAction",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+    },
+    "7fe6a8f7f776c9858b852060279661dfdd49a171a5": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "rsc"
+      },
+      "exportedName": "createOrReadKeylessAction",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "7f3834f3eb08a3ca5ed779190675911e2deecd55d6": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "collectKeylessMetadata",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "rsc"
+      },
+      "exportedName": "collectKeylessMetadata",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
+    },
+    "7ff8b6724a6283bb8bcfc30895b089f14b31bf7742": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "formatMetadataHeaders",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "rsc"
+      },
+      "exportedName": "formatMetadataHeaders",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
+    },
+    "7fb4867d4e738dfa301c4a1a2580da5f7721e9d18a": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      },
+      "exportedName": "syncKeylessConfigAction",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "7fbf54d66c2450466164ea9596423cbdc584619c78": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": "34164",
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/sign-in/[[...sign-in]]/page": "action-browser"
+      },
+      "exportedName": "deleteKeylessAction",
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    }
+  },
+  "edge": {}
+}

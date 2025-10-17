@@ -1,0 +1,3 @@
+{
+  "/api/cron/detect-trades/route": "app/api/cron/detect-trades/route.js"
+}

@@ -5,8 +5,8 @@
 
 'use client';
 
-import { TradeOSLogo, TradeOSLogoCompact, TradeOSLogoIcon, TradeOSLogoHero, TradeOSWordmark } from '@/components/branding/tradeos-logo';
-import { TradeOSLogoMinimal } from '@/components/branding/tradeos-logo-minimal';
+// import { TradeOSLogo, TradeOSLogoCompact, TradeOSLogoIcon, TradeOSLogoHero, TradeOSWordmark } from '@/components/branding/tradeos-logo';
+// import { TradeOSLogoMinimal } from '@/components/branding/tradeos-logo-minimal';
 
 export default function BrandingPage() {
   return (

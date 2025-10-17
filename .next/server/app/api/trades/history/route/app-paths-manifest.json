@@ -1,0 +1,3 @@
+{
+  "/api/trades/history/route": "app/api/trades/history/route.js"
+}

@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/detect-trades",
+      "schedule": "*/30 * * * * *"
+    },
+    {
+      "path": "/api/cron/process-trades",
+      "schedule": "*/30 * * * * *"
+    },
+    {
+      "path": "/api/cron/monitor-positions",
+      "schedule": "*/30 * * * * *"
+    }
+  ]
+}

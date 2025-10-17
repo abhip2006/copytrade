@@ -1,0 +1,3 @@
+{
+  "/api/trades/execute/route": "app/api/trades/execute/route.js"
+}
