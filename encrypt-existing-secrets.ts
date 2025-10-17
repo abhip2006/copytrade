@@ -13,7 +13,7 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
-import { encrypt, isEncrypted } from '../src/lib/crypto/encryption';
+import { encrypt, isEncrypted } from '@/lib/crypto/encryption';
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 
