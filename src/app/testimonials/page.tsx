@@ -10,8 +10,8 @@ import { motion } from "framer-motion";
 import { TestimonialsColumn } from "@/components/ui/testimonials-columns";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
-// import { HeroHeader } from "@/components/blocks/hero-section-1";
-// import { AnimatedBackground } from "@/components/ui/animated-background";
+import { HeroHeader } from "@/components/blocks/hero-section-1";
+import { AnimatedBackground } from "@/components/ui/animated-background";
 
 const testimonials = [
   {
