@@ -29,7 +29,7 @@ export async function GET() {
     const supabase = createServiceRoleClient();
 
     // Get or create user in Supabase
-    let { data: user, error: userError } = await supabase
+    const { data: user, error: userError } = await supabase
       .from('users')
       .select('*')
       .eq('clerk_user_id', clerkUserId)
