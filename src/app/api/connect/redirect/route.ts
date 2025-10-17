@@ -32,7 +32,7 @@ export async function GET() {
     let { data: user, error: userError } = await supabase
       .from('users')
       .select('*')
-      .eq('clerk_user_id', clerkUserId)
+      .eq('clerk_user_id' as any, clerkUserId)
       .single();
 
     // If user doesn't exist yet, get Clerk user info and create
