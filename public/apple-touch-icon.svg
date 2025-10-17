@@ -1,0 +1,21 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="url(#icon-gradient)"/>
+
+  <!-- White "T" and sync waves -->
+  <g>
+    <!-- T shape -->
+    <path d="M 50 50 L 130 50 L 130 65 L 102 65 L 102 130 L 78 130 L 78 65 L 50 65 Z" fill="white"/>
+
+    <!-- Sync wave indicators -->
+    <path d="M 45 95 Q 65 85, 90 95 T 135 95" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 45 115 Q 65 105, 90 115 T 135 115" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.3"/>
+  </g>
+</svg>
