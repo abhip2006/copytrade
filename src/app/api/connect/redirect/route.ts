@@ -29,10 +29,11 @@ export async function GET() {
     const supabase = createServiceRoleClient();
 
     // Get or create user in Supabase
-    let { data: user, error: userError } = await (supabase
+    // @ts-ignore - Supabase type inference issue
+    let { data: user, error: userError } = await supabase
       .from('users')
       .select('*')
-      .eq('clerk_user_id', clerkUserId) as any)
+      .eq('clerk_user_id', clerkUserId)
       .single();
 
     // If user doesn't exist yet, get Clerk user info and create
