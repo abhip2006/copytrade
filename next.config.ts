@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
     // Don't fail build on TypeScript errors (we still want to see them)
     ignoreBuildErrors: false,
   },
+  // Skip static generation for pages that use Clerk hooks
+  experimental: {
+    skipTrailingSlashRedirect: true,
+  },
+  // Use output: 'standalone' to skip static export
+  output: 'standalone',
 };
 
 export default nextConfig;
