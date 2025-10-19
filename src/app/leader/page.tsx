@@ -205,7 +205,7 @@ export default function LeaderDashboardPage() {
                     </div>
                     <div className="grid grid-cols-2 gap-2">
                       <Button
-                        variant={activeView === 'positions' ? 'primary' : 'outline'}
+                        variant={activeView === 'positions' ? 'default' : 'outline'}
                         onClick={() => setActiveView('positions')}
                         size="sm"
                         className="gap-2"
@@ -214,7 +214,7 @@ export default function LeaderDashboardPage() {
                         Positions
                       </Button>
                       <Button
-                        variant={activeView === 'history' ? 'primary' : 'outline'}
+                        variant={activeView === 'history' ? 'default' : 'outline'}
                         onClick={() => setActiveView('history')}
                         size="sm"
                         className="gap-2"
@@ -240,7 +240,7 @@ export default function LeaderDashboardPage() {
                 {/* Quick Actions */}
                 <div className="mt-6 grid grid-cols-3 gap-4">
                   <Button
-                    variant={activeView === 'positions' ? 'primary' : 'outline'}
+                    variant={activeView === 'positions' ? 'default' : 'outline'}
                     onClick={() => setActiveView('positions')}
                     className="gap-2"
                   >
@@ -248,7 +248,7 @@ export default function LeaderDashboardPage() {
                     View Positions
                   </Button>
                   <Button
-                    variant={activeView === 'history' ? 'primary' : 'outline'}
+                    variant={activeView === 'history' ? 'default' : 'outline'}
                     onClick={() => setActiveView('history')}
                     className="gap-2"
                   >

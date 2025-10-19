@@ -157,7 +157,7 @@ export function PriceChart({ symbol, onTrade, className }: PriceChartProps) {
         </div>
 
         {onTrade && (
-          <Button variant="primary" onClick={onTrade} className="gap-2">
+          <Button variant="default" onClick={onTrade} className="gap-2">
             Trade {symbol.split(':')[1] || symbol}
           </Button>
         )}

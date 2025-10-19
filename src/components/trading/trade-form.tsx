@@ -669,7 +669,7 @@ export function TradeForm({ initialSymbol, onClose, onSuccess, onSymbolChange }:
                   Cancel
                 </Button>
                 <Button
-                  variant="primary"
+                  variant="default"
                   onClick={checkImpact}
                   disabled={!selectedSymbol || !quantity || loading}
                   loading={loading}
@@ -761,7 +761,7 @@ export function TradeForm({ initialSymbol, onClose, onSuccess, onSymbolChange }:
                   Back
                 </Button>
                 <Button
-                  variant="primary"
+                  variant="default"
                   onClick={placeOrder}
                   disabled={tradeImpact.remaining_cash < 0}
                   className="flex-1"
@@ -821,7 +821,7 @@ export function TradeForm({ initialSymbol, onClose, onSuccess, onSymbolChange }:
                 </div>
               </div>
 
-              <Button variant="primary" onClick={onClose} className="mt-6">
+              <Button variant="default" onClick={onClose} className="mt-6">
                 Done
               </Button>
             </div>
@@ -842,7 +842,7 @@ export function TradeForm({ initialSymbol, onClose, onSuccess, onSymbolChange }:
                 <Button variant="outline" onClick={onClose}>
                   Close
                 </Button>
-                <Button variant="primary" onClick={reset}>
+                <Button variant="default" onClick={reset}>
                   Try Again
                 </Button>
               </div>

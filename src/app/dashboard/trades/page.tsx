@@ -160,27 +160,23 @@ export default function TradesPage() {
               label="Total Trades"
               value={stats.totalTrades}
               icon={Activity}
-              subtitle={`${formatCurrency(stats.totalVolume)} volume`}
             />
             <StatCard
               label="Successful Trades"
               value={stats.successfulTrades}
               icon={CheckCircle}
               trend="up"
-              subtitle={`${formatPercent(stats.winRate)} win rate`}
             />
             <StatCard
               label="Failed Trades"
               value={stats.failedTrades}
               icon={XCircle}
               trend={stats.failedTrades > 0 ? "down" : undefined}
-              subtitle={stats.failedTrades > 0 ? "Requires attention" : "No failures"}
             />
             <StatCard
               label="Avg Trade Size"
               value={formatCurrency(stats.avgTradeSize)}
               icon={TrendingUp}
-              subtitle="Per trade"
             />
           </div>
         )}

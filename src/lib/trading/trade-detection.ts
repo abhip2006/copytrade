@@ -11,7 +11,7 @@ import type { Database } from '@/lib/supabase/types';
 
 type User = Database['public']['Tables']['users']['Row'];
 type BrokerageConnection = Database['public']['Tables']['brokerage_connections']['Row'];
-type PositionSnapshot = Database['public']['Tables']['position_snapshots']['Row'];
+type PositionSnapshot = any; // Database['public']['Tables']['position_snapshots']['Row'];
 
 interface NormalizedPositions {
   [symbol: string]: number; // symbol -> quantity

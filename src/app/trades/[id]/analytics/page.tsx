@@ -278,25 +278,21 @@ export default function TradeAnalyticsPage({
             value={formatCurrency(analytics.netPL || analytics.unrealizedPL || 0)}
             icon={analytics.netPL !== undefined && analytics.netPL >= 0 ? TrendingUp : TrendingDown}
             trend={analytics.netPL !== undefined && analytics.netPL >= 0 ? "up" : "down"}
-            subtitle={`${analytics.returnPercent !== undefined ? formatPercent(analytics.returnPercent) : '-'} return`}
           />
           <StatCard
             label="Entry Value"
             value={formatCurrency(analytics.entryValue)}
             icon={DollarSign}
-            subtitle={`${analytics.units.toLocaleString()} units @ ${formatCurrency(analytics.entryPrice)}`}
           />
           <StatCard
             label="Current Value"
             value={formatCurrency(analytics.currentValue || analytics.exitValue || 0)}
             icon={Target}
-            subtitle={`${formatCurrency(analytics.currentPrice || analytics.exitPrice || 0)} per unit`}
           />
           <StatCard
             label="Hold Duration"
             value={formatDuration(analytics.holdDuration)}
             icon={Clock}
-            subtitle={`${analytics.marketHours ? 'Market hours' : 'Extended hours'}`}
           />
         </div>
 

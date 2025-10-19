@@ -1,13 +1,12 @@
 {
   "pages": {
     "/api/trades/history/route": [
-      "static/chunks/4a592adab48d7157.js",
-      "static/chunks/356dde39013c340b.js",
-      "static/chunks/b7bac94bf10fcc30.js",
-      "static/chunks/2a338aeb675a5707.js",
-      "static/chunks/4a4074717300b14a.js",
+      "static/chunks/f402a582c136d78f.js",
+      "static/chunks/91adb7bdb9870c6a.js",
       "static/chunks/ad485e1ef0aa584e.js",
-      "static/chunks/turbopack-9318dab1ed76ebd2.js"
+      "static/chunks/86fdc11209c7a199.js",
+      "static/chunks/75a3f12660976f11.js",
+      "static/chunks/turbopack-b788fbcf703d1809.js"
     ]
   }
 }

@@ -55,7 +55,7 @@ export function EmptyState({
       )}
 
       {action && (
-        <Button onClick={action.onClick} variant="primary">
+        <Button onClick={action.onClick} variant="default">
           {action.label}
         </Button>
       )}

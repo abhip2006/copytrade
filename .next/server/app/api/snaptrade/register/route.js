@@ -1,5 +1,5 @@
 var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/snaptrade/register/route.js")
-R.c("server/chunks/[root-of-the-server]__ddca2aa0._.js")
+R.c("server/chunks/[root-of-the-server]__c0887674._.js")
 R.c("server/chunks/node_modules_next_92aaecbe._.js")
 R.c("server/chunks/node_modules_bba441e0._.js")
 R.c("server/chunks/node_modules_ae5569c2._.js")

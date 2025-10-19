@@ -1,0 +1,12 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/webhooks/snaptrade/route.js")
+R.c("server/chunks/[root-of-the-server]__a5c869ec._.js")
+R.c("server/chunks/node_modules_next_dist_esm_build_templates_app-route_7aeffcc8.js")
+R.c("server/chunks/node_modules_next_92aaecbe._.js")
+R.c("server/chunks/node_modules_next_dist_88892b79._.js")
+R.c("server/chunks/_1379169f._.js")
+R.c("server/chunks/node_modules_ae5569c2._.js")
+R.c("server/chunks/[root-of-the-server]__98d6514a._.js")
+R.c("server/chunks/[root-of-the-server]__00ee2e73._.js")
+R.m(4723)
+R.m(55994)
+module.exports=R.m(55994).exports

@@ -91,8 +91,8 @@ async function closePosition(position: PositionWithRisk, reason: string) {
 
     return {
       success: true,
-      orderId: order.brokerage_order_id,
-      executedPrice: order.executed_price,
+      orderId: (order as any).brokerage_order_id,
+      executedPrice: (order as any).executed_price,
     };
   } catch (error) {
     console.error(`[SL/TP] Error closing position:`, error);

@@ -436,7 +436,7 @@ export default function SettingsPage() {
                 </div>
               )}
               <Button
-                variant="primary"
+                variant="default"
                 onClick={handleSaveSettings}
                 disabled={loading}
                 className="gap-2"

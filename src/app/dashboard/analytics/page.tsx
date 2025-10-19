@@ -268,7 +268,6 @@ export default function AnalyticsPage() {
             value={formatCurrency(analytics.portfolio.totalPnL)}
             icon={TrendingUp}
             trend={analytics.portfolio.totalPnL >= 0 ? "up" : "down"}
-            subtitle={`${formatPercent(analytics.portfolio.totalPnLPercent)} return`}
           />
           <StatCard
             label="Avg Daily Return"
@@ -280,7 +279,6 @@ export default function AnalyticsPage() {
             label="Sharpe Ratio"
             value={analytics.performance.sharpeRatio.toFixed(2)}
             icon={BarChart3}
-            subtitle="Risk-adjusted return"
           />
         </div>
 
@@ -291,7 +289,7 @@ export default function AnalyticsPage() {
               Portfolio Performance
             </h2>
             <div className="h-[400px]">
-              <PriceChart symbol="PORTFOLIO" height={400} />
+              <PriceChart symbol="PORTFOLIO" />
             </div>
           </Card>
         </div>

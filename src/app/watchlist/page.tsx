@@ -282,8 +282,8 @@ export default function WatchlistPage() {
                     allow_symbol_change={true}
                     save_image={false}
                     studies={[
-                      "STD;SMA",
-                      "STD;Volume"
+                      "STD;SMA" as any,
+                      "STD;Volume" as any
                     ]}
                     show_popup_button={true}
                     popup_width="1000"

@@ -317,7 +317,7 @@ export default function DashboardPage() {
           </div>
 
           <Link href="/leaders">
-            <Button variant="primary" className="gap-2">
+            <Button variant="default" className="gap-2">
               <Plus className="w-5 h-5" />
               Follow New Leader
             </Button>

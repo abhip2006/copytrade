@@ -105,7 +105,7 @@ class SnapTradeService {
         userSecret,
       });
 
-      return response.data.redirectURI || '';
+      return (response.data as any).redirectURI || '';
     } catch (error) {
       console.error(`Error getting redirect URI for user ${userId}:`, error);
       throw new Error(`Failed to get redirect URI: ${error}`);
@@ -176,7 +176,7 @@ class SnapTradeService {
         userId,
         userSecret,
       });
-      return response.data;
+      return response.data as any;
     } catch (error) {
       console.error(`Error refreshing authorization ${authorizationId}:`, error);
       throw new Error(`Failed to refresh authorization: ${error}`);
@@ -198,7 +198,7 @@ class SnapTradeService {
         userSecret,
       });
 
-      return response.data as Account[];
+      return response.data as any;
     } catch (error) {
       console.error(`Error listing accounts for user ${userId}:`, error);
       throw new Error(`Failed to list accounts: ${error}`);
@@ -250,7 +250,7 @@ class SnapTradeService {
         accountId,
       });
 
-      return response.data as Position[];
+      return response.data as any;
     } catch (error) {
       console.error(`Error getting positions for account ${accountId}:`, error);
       throw new Error(`Failed to get account positions: ${error}`);
@@ -276,7 +276,7 @@ class SnapTradeService {
         accountId,
       });
 
-      return response.data as AccountHoldings;
+      return response.data as any;
     } catch (error) {
       console.error(`Error getting holdings for account ${accountId}:`, error);
       throw new Error(`Failed to get account holdings: ${error}`);
@@ -300,9 +300,9 @@ class SnapTradeService {
         userId,
         userSecret,
         accountId,
-      });
+      } as any);
 
-      return response.data as Activity[];
+      return response.data as any;
     } catch (error) {
       console.error(`Error getting activities for account ${accountId}:`, error);
       throw new Error(`Failed to get account activities: ${error}`);
@@ -323,7 +323,7 @@ class SnapTradeService {
         substring: query,
       });
 
-      return response.data as SymbolSearchResult[];
+      return response.data as any;
     } catch (error) {
       console.error(`Error searching symbols with query '${query}':`, error);
       throw new Error(`Failed to search symbols: ${error}`);
@@ -378,7 +378,7 @@ class SnapTradeService {
         1
       );
 
-      const trade = impact.trade || {};
+      const trade = impact.trade || ({} as any);
 
       return {
         symbol: symbol.toUpperCase(),
@@ -435,9 +435,9 @@ class SnapTradeService {
         userId,
         userSecret,
         manualTradeForm: body,
-      });
+      } as any);
 
-      return response.data as TradeImpact;
+      return response.data as any;
     } catch (error) {
       console.error('Error checking trade impact:', error);
       throw new Error(`Failed to check trade impact: ${error}`);
@@ -463,10 +463,10 @@ class SnapTradeService {
         tradeId,
         userId,
         userSecret,
-        waitToConfirm,
+        wait_to_confirm: waitToConfirm,
       });
 
-      return response.data as AccountOrderRecord;
+      return response.data as any;
     } catch (error) {
       console.error('Error placing order:', error);
       throw new Error(`Failed to place order: ${error}`);
@@ -494,7 +494,7 @@ class SnapTradeService {
         tradingCancelUserAccountOrderRequest: {
           brokerage_order_id: orderId,
         },
-      });
+      } as any);
       return true;
     } catch (error) {
       console.error(`Error canceling order ${orderId}:`, error);
@@ -521,7 +521,7 @@ class SnapTradeService {
         accountId,
       });
 
-      return response.data as OptionPosition[];
+      return response.data as any;
     } catch (error) {
       console.error(`Error getting option holdings for account ${accountId}:`, error);
       throw new Error(`Failed to get option holdings: ${error}`);

@@ -63,8 +63,8 @@ export const copyRelationshipUpdateSchema = copyRelationshipCreateSchema.partial
 // ========== User Role Schema ==========
 
 export const userRoleSchema = z.object({
-  role: z.enum(['leader', 'follower', 'both'], {
-    errorMap: () => ({ message: 'Invalid role. Must be "leader", "follower", or "both"' })
+  role: z.enum(['leader', 'follower', 'both']).refine(() => true, {
+    message: 'Invalid role. Must be "leader", "follower", or "both"'
   }),
 });
 
@@ -116,7 +116,7 @@ export function validateRequestBody<T>(
     return schema.parse(body);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      const errorMessages = error.errors.map(err =>
+      const errorMessages = (error as any).errors.map((err: any) =>
         `${err.path.join('.')}: ${err.message}`
       ).join(', ');
       throw new Error(`Validation failed: ${errorMessages}`);
@@ -137,8 +137,8 @@ export function safeValidate<T>(
   if (result.success) {
     return { success: true, data: result.data };
   } else {
-    const errorMessages = result.error.errors
-      .map(err => `${err.path.join('.')}: ${err.message}`)
+    const errorMessages = (result.error as any).errors
+      .map((err: any) => `${err.path.join('.')}: ${err.message}`)
       .join(', ');
     return { success: false, error: errorMessages };
   }

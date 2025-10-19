@@ -110,7 +110,7 @@ export default function LeaderProfilePage({ params }: LeaderPageProps) {
           <h2 className="text-2xl font-bold text-[var(--foreground)] mb-2">Leader Not Found</h2>
           <p className="text-[var(--foreground-muted)] mb-4">The leader you're looking for doesn't exist or is not public.</p>
           <Link href="/leaders">
-            <Button variant="primary">Browse Leaders</Button>
+            <Button variant="default">Browse Leaders</Button>
           </Link>
         </div>
       </div>
@@ -163,7 +163,7 @@ export default function LeaderProfilePage({ params }: LeaderPageProps) {
                 <div className="flex items-center gap-3 mb-2">
                   <h1 className="text-3xl font-bold gradient-text">{leader.full_name}</h1>
                   {leader.is_verified && (
-                    <Badge variant="primary" className="gap-1">
+                    <Badge variant="default" className="gap-1">
                       <CheckCircle className="w-3 h-3" />
                       Verified
                     </Badge>
@@ -212,7 +212,7 @@ export default function LeaderProfilePage({ params }: LeaderPageProps) {
                   Following
                 </Button>
               ) : (
-                <Button variant="primary" className="gap-2" onClick={handleFollowClick}>
+                <Button variant="default" className="gap-2" onClick={handleFollowClick}>
                   <Play className="w-5 h-5" />
                   Start Copying
                 </Button>
@@ -347,8 +347,9 @@ export default function LeaderProfilePage({ params }: LeaderPageProps) {
         <CopySettingsModal
           leaderId={leader.id}
           leaderName={leader.full_name}
+          isOpen={showCopyModal}
           onClose={() => setShowCopyModal(false)}
-          onSave={handleCopySettingsSaved}
+          onSuccess={handleCopySettingsSaved}
         />
       )}
     </div>

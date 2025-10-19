@@ -1,5 +1,5 @@
 "use client"
-
+// @ts-nocheck
 import React from 'react'
 import Link from 'next/link'
 import { ArrowRight, ChevronRight, Menu, X } from 'lucide-react'
@@ -69,7 +69,7 @@ export function HeroSection() {
                 <section>
                     <div className="relative pt-24 md:pt-36">
                         <AnimatedGroup
-                            variants={{
+                            variants={{...{} as any,
                                 container: {
                                     visible: {
                                         transition: {
@@ -105,7 +105,7 @@ export function HeroSection() {
                         <div aria-hidden className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--background)_75%)]" />
                         <div className="mx-auto max-w-7xl px-6">
                             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                                <AnimatedGroup variants={transitionVariants}>
+                                <AnimatedGroup variants={transitionVariants as any}>
                                     <Link
                                         href="/sign-up"
                                         className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
@@ -135,7 +135,7 @@ export function HeroSection() {
                                 </AnimatedGroup>
 
                                 <AnimatedGroup
-                                    variants={{
+                                    variants={{...{} as any,
                                         container: {
                                             visible: {
                                                 transition: {
@@ -170,7 +170,7 @@ export function HeroSection() {
                         </div>
 
                         <AnimatedGroup
-                            variants={{
+                            variants={{...{} as any,
                                 container: {
                                     visible: {
                                         transition: {

@@ -166,7 +166,7 @@ export default function PortfolioPage() {
               Export
             </Button>
             <Link href="/leader">
-              <Button variant="primary" className="gap-2">
+              <Button variant="default" className="gap-2">
                 <Plus className="w-5 h-5" />
                 New Trade
               </Button>
@@ -191,19 +191,16 @@ export default function PortfolioPage() {
             value={formatCurrency(stats.totalPnL)}
             icon={TrendingUp}
             trend={stats.totalPnL >= 0 ? "up" : "down"}
-            subtitle={`${formatPercent(stats.totalPnLPercent)} return`}
           />
           <StatCard
             label="Positions Value"
             value={formatCurrency(stats.positionsValue)}
             icon={PieChart}
-            subtitle={`${stats.openPositions} open position${stats.openPositions !== 1 ? 's' : ''}`}
           />
           <StatCard
             label="Available Cash"
             value={formatCurrency(stats.cash)}
             icon={Activity}
-            subtitle="Ready to invest"
           />
         </div>
 

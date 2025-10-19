@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
     const validation = safeValidate(copyRelationshipCreateSchema, body);
     if (!validation.success) {
       return NextResponse.json(
-        { error: validation.error },
+        { error: 'error' in validation ? validation.error : 'Invalid request data' },
         { status: 400 }
       );
     }

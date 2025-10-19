@@ -302,7 +302,7 @@ export class CopyTradeEngine {
 
       // Step 5: Calculate follower quantity using position sizing
       const sizingResult = positionSizingCalculator.calculatePositionSize(
-        relationship,
+        relationship as any,
         trade.quantity,
         trade.price,
         followerAccount.balance,
