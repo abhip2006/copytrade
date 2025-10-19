@@ -11,8 +11,6 @@ const nextConfig: NextConfig = {
     // Don't fail build on TypeScript errors (we still want to see them)
     ignoreBuildErrors: false,
   },
-  // Use standalone output to properly handle dynamic pages with Clerk
-  output: 'standalone',
 };
 
 export default nextConfig;
