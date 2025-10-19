@@ -4,7 +4,7 @@
 type AppRoutes = "/branding" | "/dashboard" | "/dashboard/analytics" | "/dashboard/portfolio" | "/dashboard/settings" | "/dashboard/trades" | "/faq" | "/features" | "/follower/orders" | "/leader" | "/leader/orders" | "/leaders" | "/leaders/[id]" | "/onboarding" | "/sign-in/[[...sign-in]]" | "/sign-up/[[...sign-up]]" | "/testimonials" | "/trades/[id]/analytics" | "/watchlist"
 type AppRouteHandlerRoutes = "/api/chart-data" | "/api/connect/redirect" | "/api/connections" | "/api/copy-relationships" | "/api/copy-relationships/[id]" | "/api/copy/settings" | "/api/cron/detect-trades" | "/api/cron/monitor-positions" | "/api/cron/process-trades" | "/api/leaders/[id]" | "/api/leaders/discover" | "/api/options/chain" | "/api/orders" | "/api/orders/cancel" | "/api/orders/replace" | "/api/portfolio" | "/api/portfolio/stats" | "/api/positions" | "/api/quotes" | "/api/search-symbols" | "/api/snaptrade/accounts" | "/api/snaptrade/connect" | "/api/snaptrade/register" | "/api/symbols/search" | "/api/trades/[id]/analytics" | "/api/trades/detect" | "/api/trades/execute" | "/api/trades/history" | "/api/trades/impact" | "/api/trades/process" | "/api/user/check-onboarding" | "/api/user/role" | "/api/watchlist" | "/api/watchlist/[symbol]" | "/api/webhooks/clerk" | "/api/webhooks/snaptrade"
 type PageRoutes = never
-type LayoutRoutes = "/dashboard" | "/leader"
+type LayoutRoutes = "/dashboard" | "/leader" | "/onboarding"
 type RedirectRoutes = never
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
@@ -74,6 +74,7 @@ export type ParamsOf<Route extends Routes> = ParamMap[Route]
 interface LayoutSlotMap {
   "/dashboard": never
   "/leader": never
+  "/onboarding": never
 }
 
 
